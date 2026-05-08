@@ -1,0 +1,182 @@
+nome = (input("Insira seu nome: ")) 
+ nasc = int(input("Insira seu ano de nascimento: ")) 
+ atual = int(input("Insira o ano atual: ")) 
+ altura = float(input("Insira sua altura: ")) 
+ idade = int(atual - nasc) 
+ print("olá, " + str(nome) + "! Você tem " + str(idade) + " anos e sua altura é " + str(altura) + "m. Regipstro concluído.")
+
+valor = float(input("Insira o valor da hora cobrada: ")) 
+ hora = float(input("Insira a quantidade de horas trabalhadas: ")) 
+ bruto = valor * hora 
+ imposto = bruto * 0.15 
+ liquido = bruto - imposto 
+ print("Valor bruto: R$ " + str(bruto)) 
+ print("Imposto: R$ " + str(imposto)) 
+ print("Valor líquido: R$ " + str(liquido))
+
+fatia = int(input("Insira a quantidade de fatias: ")) 
+ pessoas = int(input("Insira a quantidade de programadores: ")) 
+ fatia_por_pessoa = fatia // pessoas 
+ fatia_sobra = fatia % pessoas 
+ print("Cada programador receberá " + str(fatia_por_pessoa) + " fatias de pizza.") 
+ print("Sobrarão " + str(fatia_sobra) + " fatias de pizza")
+
+idade = int(input("Insira sua idade: ")) 
+ exp = int(input("Insira sua experiência em anos: ")) 
+ acesso = (idade >= 18) and (exp >= 2) 
+ print("Acesso liberado:", acesso)
+
+tam = float(input("Insira o tamanho do arquivo em MB: ")) 
+ vel = float(input("Insira a velocidade de download em Mbps: ")) 
+ ts = (tam * 8) / vel 
+ min = int(ts // 60) 
+ seg = int(ts % 60) 
+ print("O tempo estimado para download é de " + str(min) + " minutos e " + str(seg) + " segundos.")
+
+tam = float(input("Insira o tamanho do arquivo em MB: ")) 
+ vel = float(input("Insira a velocidade de download em Mbps: ")) 
+ ts = (tam * 8) / vel 
+ min = int(ts // 60) 
+ seg = int(ts % 60) 
+ print("O tempo estimado para download é de " + str(min) + " minutos e " + str(seg) + " segundos.")
+
+n = int(input("Insira um número inteiro: ")) 
+ if n == 0: 
+     print("O número é zero.") 
+ elif n > 0: 
+     print("O número é positivo.") 
+ else: 
+     print("O número é negativo.")
+
+id = int(input("Digite a sua idade: ")) 
+ if id < 18: 
+     print("Você é menor de idade.") 
+ elif id >= 18 and id <60: 
+     print("Você é maior de idade. ") 
+ else: 
+     print("Você é um idoso. ")  
+
+n = int(input("Insira um número inteiro: ")) 
+ if n%2 == 0: 
+     print("o número é par.") 
+ else:    
+     print("o número é ímpar.")
+
+s = input("Insira a sua senha: ") 
+ while s != "Atenção": 
+     print("Senha incorreta. Tente novamente.") 
+     s = input("Insira a sua senha: ") 
+ print("Senha correta. Acesso permitido.")
+
+contador_positivo = 0 
+ for i in range(10): 
+     num = int(input("Insira um número inteiro: ")) 
+     if num > 0: 
+         contador_positivo = contador_positivo + 1 
+ print("Quantidade de números positivos: " + str(contador_positivo))
+
+while True: 
+     nota = float(input("Insira a nota do aluno: ")) 
+     if nota < 0 or nota > 10: 
+         print("Nota inválida. Tente novamente.")  
+     else:        break 
+ print("Nota válida. O aluno foi aprovado." if nota >= 6 else "Nota válida. O aluno foi reprovado.")
+
+contador = 0 
+ soma = 0  
+ for i in range(8): 
+     num = int(input("Insira um número inteiro: ")) 
+     if num%2 == 0: 
+         contador = contador + 1 
+         soma = soma + num 
+ print("Soma dos números pares: " + str(soma)) 
+ print("Quantidade de números pares: " + str(contador))
+
+n = int(input("Digite um número inteiro para calcular a tabuada: ")) 
+ print("Tabuada de " + str(n) + ":") 
+ for i in range (1,11): 
+     print(str(n) + " x " + str(i) + " = " + str(n*i))
+
+sal = float(input("Insira o valor do salário: R$ ")) 
+ if sal < 1500: 
+               percentual = 0.15 
+ elif sal >= 1500 and sal < 3000: 
+             percentual = 0.10 
+ else:   
+             percentual = 0.05 
+ aumento = sal * percentual 
+ novo_sal = sal + aumento 
+ print("Valor do aumento: R$ " + str(aumento)) 
+ print("Novo salário: R$ " + str(novo_sal))
+
+op = -1 
+ while op != 0: 
+     print ("\--- MENU DE OPERAÇÕES ---") 
+     print ("1 - Soma") 
+     print ("2 - Subtrair") 
+     print ("0 - Sair") 
+     op = int(input("Escolha uma opção: ")) 
+     if op == 1: 
+         n1 = float(input("Digite o primeiro número: ")) 
+         n2 = float(input("Digite o segundo número: ")) 
+         print("Resultado: " + str(n1+n2)) 
+     elif op == 2: 
+         n1 = float(input("Digite o primeiro número: ")) 
+         n2 = float(input("Digite o segundo número: ")) 
+         print("Resultado: " + str(n1-n2)) 
+     elif op == 0: 
+         print("Encerrando o programa. Até logo!")
+
+aluno = int(input("insira o número de alunos: ")) 
+ aprovados = 0 
+ recuperacao = 0 
+ reprovados = 0 
+ for i in range (aluno): 
+     media = float(input("insira a média do aluno: ")) 
+     if media >= 7: 
+         aprovados = aprovados + 1 
+     elif media >= 4: 
+         recuperacao = recuperacao + 1 
+     else: 
+         reprovados = reprovados + 1 
+ print("Quantidade de alunos aprovados: " + str(aprovados)) 
+ print("Quantidade de alunos em recuperação: " + str(recuperacao)) 
+ print("Quantidade de alunos reprovados: " + str(reprovados))
+
+cont = 'S' 
+ tcomp = 0.0 
+  
+ while cont.upper() == 'S': 
+     vcomp = float(input("Insira o valor da compra: R$ ")) 
+     tcomp += vcomp 
+     cont = input("Deseja inserir outra continuar? (S/N) ") 
+  
+ print( "-" * 30 ) 
+ print("Total da compra: R$ " + str(tcomp)) 
+ print("Programa encerrado. Volte sempre!")
+
+contador = 10 
+ while contador >= 1: 
+     print(contador) 
+     contador -= 1
+
+#Refatorando o ex06 (Valiadação de nota) 
+ for i in range (999): 
+     nota = float(input("insira a nota do aluno (0 a 10):")) 
+     if nota >=0 and nota <= 10: 
+         if nota >= 6: 
+             print("Nota inválida. O aluno foi aprovado.") 
+         else: 
+             print("Nota válida. O aluno foi reprovado.")  
+     else: 
+         print("Nota inválida. Por favor, insira uma nota entre 0 e 10.") 
+  
+ #Com o 'for', o código fica mais seguro contra loops infinitos reais, pois há um limite definido no range.
+
+mnota = 0.0 
+ for i in range (5): 
+     nota = float(input(f"Digite a nota do aluno {i + 1}: ")) 
+     if nota > mnota: 
+         mnota = nota 
+         print("=" * 30) 
+         print(f"A maior nota é: {mnota}.")
